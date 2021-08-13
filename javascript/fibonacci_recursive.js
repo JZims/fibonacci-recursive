@@ -1,5 +1,11 @@
 function fibonacci(n) {
-  // type your code here
+  //Base case limits 1 or 0 to return itself
+  if(n < 2) return n
+
+  //Fibonacci of n subtracts until the base case is met, returning the sum for each call
+  //Return the sum of the two numbers before 
+  return fibonacci(n - 1) + fibonacci(n - 2)
+  
 }
 
 if (require.main === module) {
